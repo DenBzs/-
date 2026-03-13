@@ -1,1 +1,1 @@
-# prompt-mover-multi
+# prompt-toggle-manager
