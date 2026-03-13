@@ -1,0 +1,12 @@
+{
+    "display_name": "Prompt Toggle Manager",
+    "loading_order": 10,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "custom",
+    "version": "1.0.0",
+    "homePage": "https://github.com/DenBzs/prompt-toggle-manager",
+    "auto_update": false
+}
