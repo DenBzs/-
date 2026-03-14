@@ -112,15 +112,15 @@ function buildGroupCard(g, gi, pn) {
         // override button: cycles null → true → false → null
         let ovrLabel, ovrCls;
         if (ovr === null)      { ovrLabel = '그룹';   ovrCls = 'ptm-tovr-none'; }
-        else if (ovr === true) { ovrLabel = '강제On';  ovrCls = 'ptm-tovr-on';  }
-        else                   { ovrLabel = '강제Off'; ovrCls = 'ptm-tovr-off'; }
+        else if (ovr === true) { ovrLabel = 'On';  ovrCls = 'ptm-tovr-on';  }
+        else                   { ovrLabel = 'Off'; ovrCls = 'ptm-tovr-off'; }
 
         return `
         <div class="ptm-trow">
             <span class="ptm-tstate ${effectiveOn?'ptm-ts-on':'ptm-ts-off'}">${effectiveOn?'On':'Off'}</span>
             <button class="ptm-ibtn ptm-tovr ${ovrCls}" data-gi="${gi}" data-ti="${ti}">${ovrLabel}</button>
             <span class="ptm-tname">${name}</span>
-            <select class="ptm-bsel" data-gi="${gi}" data-ti="${ti}">
+            <select class="ptm-bsel" data-gi="${gi}" data-ti="${ti}" style="width:48px;min-width:48px;max-width:48px">
                 <option value="direct" ${isDirect?'selected':''}>동일</option>
                 <option value="invert" ${!isDirect?'selected':''}>반전</option>
             </select>
