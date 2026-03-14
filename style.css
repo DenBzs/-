@@ -71,10 +71,10 @@
 
 /* behavior select */
 .ptm-bsel{
-    flex:0 0 46px;
-    width:46px;
-    min-width:46px;
-    height:29px;
+    flex:0 0 45px;
+    width:45px;
+    min-width:45px;
+    height:27px;
     padding:0;
     font-size:9px;
     line-height:1.2;
